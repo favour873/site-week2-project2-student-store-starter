@@ -1,0 +1,18 @@
+.sidebar {
+    background-color: #484049;
+}
+
+.open { 
+    width: 25%;
+ } 
+
+.closed {
+    width: 50px;
+} 
+
+.sidebar button {
+    background: white;
+    color: #484049;
+    border: none;
+    border-radius: 5px;
+}

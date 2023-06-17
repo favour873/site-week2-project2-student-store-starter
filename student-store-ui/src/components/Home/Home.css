@@ -6,3 +6,87 @@
   display: flex;
   flex-direction: column;
 }
+
+.home .bottom {
+  background-color: #484049;
+  border-radius: 20px;
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.about {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.about .summary {
+  color: #5b5b5b;
+}
+
+.contact .content {
+  color: #5b5b5b;
+}
+
+.contact .content .summary .info {
+  list-style-type: none;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.summary {
+  display: flex;
+}
+
+.contact {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 50px;
+} 
+
+.payment-options img {
+  width: 30px;
+}
+
+.content .bottom {
+  margin-top: 0;
+  padding: 10px;
+  background-color: white;
+}
+
+footer .content .top .links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.footer .content .top .links .link-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.footer .content .top .links .link-column ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  color: #5b5b5b;
+}

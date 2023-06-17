@@ -1,0 +1,76 @@
+.product-contents{
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-grid ul {
+    list-style-type: none;
+    padding: 25px;
+}
+
+.product-grid li a {
+    padding: 20px 20px;
+    color: black;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+} 
+
+.product-grid li a:hover {
+    background-color: #555;
+} 
+
+.product-grid .navbar {
+    background-color: #484049;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+}
+
+.product-grid li {
+    display: flex;
+    display: inline;
+} 
+
+.searchbar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #484049;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+
+.searchbar {
+    margin-top: 20px;
+}
+
+.searchbar button {
+    /* float: left; */
+    width: 20%;
+    padding: 10px;
+    background: #484049;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.home-title {
+    padding-top: 10px;
+}
+
+.categories button {
+    margin-bottom: 30px;
+    width: 20%;
+    padding: 10px;
+    background: #484049;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 20px;
+}

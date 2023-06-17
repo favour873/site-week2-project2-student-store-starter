@@ -1,0 +1,32 @@
+.hero {
+    background-color: #88778c;
+    border-radius: 10px;
+} 
+
+h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.intro {
+    color: white;
+    margin: 20px 50px;
+    max-width: 600px;
+    display: inline-block;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+.hero-img {
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 200px;
+}
+
+img {
+    flex-wrap: wrap;
+    width: 150px;
+}
