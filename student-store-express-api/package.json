@@ -4,8 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "nodemon server.js",
+    "dev": "PORT=3001 nodemon server.js --port 3001"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -15,5 +15,11 @@
   },
   "engines": {
     "node": ">=18.16.0"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "description": "Run `npm install` to install the required dependencies, then run `npm start` to start the backend.",
+  "author": "",
+  "license": "ISC"
 }

@@ -18,7 +18,7 @@ const ProductGrid = (props) => {
   }
 
   const handleButton = (event) => {
-    console.log("button pressed")
+    // console.log("button pressed")
     handleCategory(event.target.value)
   }
 
@@ -56,7 +56,7 @@ const ProductGrid = (props) => {
           return searchValue.toLowerCase() === "" ? currProduct : currProduct.name.toLowerCase().includes(searchValue)})
 
           .map((currProduct) => 
-          <ProductCard key={currProduct.id} product={currProduct} productId={currProduct.id} showDescription={false}/>)}
+          <ProductCard key={currProduct.id} product={currProduct} quantity={props.quantity} productId={currProduct.id} showDescription={false} handleAddItemToCart={props.handleAddItemToCart} handleRemoveItemFromCart={props.handleRemoveItemFromCart}/>)}
 
       </div>
 
