@@ -14,9 +14,9 @@ export default function Sidebar({isActive = false, handleClick, shoppingCart, pr
       
       {isActive
       ? (<div> 
-        <ShoppingCart isActive={isActive} products={products} shoppingCart={shoppingCart}> </ShoppingCart> 
-        <CheckoutForm isActive={isActive} checkoutForm={checkoutForm} shoppingCart={shoppingCart} handleOnCheckoutFormChange={handleOnCheckoutFormChange} handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm}> </CheckoutForm>
-        <Receipt checkoutFormData={checkoutFormData} products={products} checkoutForm={checkoutForm}/>
+        <ShoppingCart isActive={isActive} products={products} shoppingCart={shoppingCart} checkoutForm={checkoutForm}> </ShoppingCart> 
+        {/* <CheckoutForm isActive={isActive} products={products} checkoutForm={checkoutForm} shoppingCart={shoppingCart} handleOnCheckoutFormChange={handleOnCheckoutFormChange} handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm}> </CheckoutForm> */}
+        {/* <Receipt checkoutFormData={checkoutFormData} products={products} checkoutForm={checkoutForm}/> */}
       </div>)
       : null}
       

@@ -20,6 +20,6 @@ li a:hover {
     display: flex;
 }
 
-li {
+.navlist li {
     display: inline;
 }  

@@ -1,17 +1,10 @@
 import React from 'react'
 import "./ShoppingCart.css"
 import {useState, useEffect} from "react"
+import CheckoutForm from '../CheckoutForm/CheckoutForm'
 
 
 const ShoppingCart = (props) => {
-
-  // create a new array of objects
-    // contains {name, price, quantity}
-  // map through this array to display cart
-    // map => <li> product.name </li>
-  // have a separate total cart value calc
-    // loop through this array and calculate total
-
   
   let ids = Object.keys(props.shoppingCart)
   console.log("shopping cart currently", props.shoppingCart)
@@ -19,7 +12,7 @@ const ShoppingCart = (props) => {
   const productsInCart = ids.map((id) => [props.products[id - 1].name, props.shoppingCart[id], props.products[id - 1].price, (props.products[id - 1].price * props.shoppingCart[id]).toFixed(2)])
   // console.log(productsInCart)
 
-  const productDetailInCart = productsInCart.map((product) => <tr><td>{product[0]}</td><td>{product[1]}</td><td>${product[2]}</td><td>${product[3]}</td></tr>)
+  const productDetailInCart = productsInCart.map((product) => <tr key={product.id}><td key={product.id}>{product[0]}</td><td key={product.id}>{product[1]}</td><td key={product.id}>${product[2]}</td><td key={product.id}>${product[3]}</td></tr>)
   // console.log("prodDetailInCart",productDetailInCart)
 
   let subtotal = 0
@@ -39,28 +32,30 @@ const ShoppingCart = (props) => {
           : 
           <table>
             <tbody>
-              <tr>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Unit Price</th>
-                <th>Cost</th>
+              <tr key="sc-details">
+                <th key="name">Name</th>
+                <th key="quantity">Quantity</th>
+                <th key="price">Unit Price</th>
+                <th key="cost">Cost</th>
               </tr>
               {productDetailInCart}
-              <tr> 
-                <td><strong>Subtotal</strong></td> 
-                <td className="subtotal"><strong>${subtotal.toFixed(2)}</strong></td>
+              <tr key="st-details"> 
+                <td key="subtotal"><strong>Subtotal</strong></td> 
+                <td key="sb" className="subtotal"><strong>${subtotal.toFixed(2)}</strong></td>
               </tr>
-              <tr> 
-                <td><strong>Taxes and Fees</strong></td> 
-                <td><strong>${(subtotal * 0.0875).toFixed(2)}</strong></td>
+              <tr key="tx-details"> 
+                <td key="taxes"><strong>Taxes and Fees</strong></td> 
+                <td key="tx"><strong>${(subtotal * 0.0875).toFixed(2)}</strong></td>
               </tr>
-              <tr> 
-                <td><strong>Total</strong> </td> 
-                <td><strong>${total.toFixed(2)}</strong></td>
+              <tr key="tt-details"> 
+                <td key="total"><strong>Total</strong> </td> 
+                <td key="tt"><strong>${total.toFixed(2)}</strong></td>
               </tr>
             </tbody>
           </table>}
         </div>
+
+        <CheckoutForm isActive={props.isActive} products={props.products} subtotal={subtotal} total={total} checkoutForm={props.checkoutForm} shoppingCart={props.shoppingCart} handleOnCheckoutFormChange={props.handleOnCheckoutFormChange} handleOnSubmitCheckoutForm={props.handleOnSubmitCheckoutForm}> </CheckoutForm>
 
     </div>
   )

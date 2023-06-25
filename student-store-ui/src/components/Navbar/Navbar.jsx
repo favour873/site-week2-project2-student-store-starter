@@ -11,7 +11,7 @@ export default function Navbar() {
 
       <nav className="navbar">
         <Logo />
-      <ul>    
+      <ul className="navlist">    
         <li> </li>
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"></link>
         <li> <a href="#"> <i className="uil uil-instagram"></i> </a> </li>

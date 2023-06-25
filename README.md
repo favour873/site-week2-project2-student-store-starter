@@ -52,3 +52,6 @@ Check out our [deployed Student Store](https://codepath-student-store-demo.surge
 
 <!-- Week 3 - Student Store Part 2 Walkthrough -->
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/f0d88329fd604a339c49c33628aa9850?sid=76d4af9a-cd9c-47e0-9372-c9e5a43ddf25" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<!-- Week 3 - Student Store Part 2 Walkthrough with receipt details-->
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/02b029602e564714a174071161252754?sid=32cd043a-9dd2-4c8a-a737-87100ba554c8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
